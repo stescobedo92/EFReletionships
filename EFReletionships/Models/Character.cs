@@ -10,5 +10,7 @@ namespace EFReletionships.Models
         public int UserId { get; set; }
         [JsonIgnore]
         public User User { get; set; }
+        public int WeaponId { get; set; }
+        public Weapon Weapon { get; set; }
     }
 }
