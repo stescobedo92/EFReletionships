@@ -10,7 +10,7 @@ namespace EFReletionships.Data
             
         }
 
-        DbSet<User> Users { get; set; }
-        DbSet<Character> Character { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Character> Character { get; set; }
     }
 }
