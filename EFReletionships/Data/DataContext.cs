@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFReletionships.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EFReletionships.Data
 {
@@ -8,5 +9,7 @@ namespace EFReletionships.Data
         {
             
         }
+
+        DbSet<User> Users { get; set; }
     }
 }
