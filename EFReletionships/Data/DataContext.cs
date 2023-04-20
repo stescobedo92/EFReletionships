@@ -11,5 +11,6 @@ namespace EFReletionships.Data
         }
 
         DbSet<User> Users { get; set; }
+        DbSet<Character> Character { get; set; }
     }
 }
