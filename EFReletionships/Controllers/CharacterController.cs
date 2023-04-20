@@ -21,7 +21,7 @@ namespace EFReletionships.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Character>>> GetByUserId(int userId)
         {
-            var characters = await _context.Character.Where(ch => ch.UserId == userId).ToListAsync();
+            var characters = await _context.Character.Where(ch => ch.UserId == userId).Include(wp => wp.Weapon).ToListAsync();
 
             return characters;
         }
